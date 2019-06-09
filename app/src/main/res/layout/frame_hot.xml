@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.swufe.wy.slimming.HotFragment">
 
     <TextView
         android:id="@+id/hotTextView1"
@@ -12,9 +14,18 @@
         android:text="@string/frame_hot"
         android:gravity="center"
         android:textSize="28sp" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/div_white" />
+
+    <ExpandableListView
+        android:id="@+id/food_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/watm_background_gray"
+        android:childDivider="@color/theme_blue_two"
+        android:dividerHeight="2dp"
+        android:groupIndicator="@null"></ExpandableListView>
 </LinearLayout>

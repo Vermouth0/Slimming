@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Slimming</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radio_home">主页</string>
+    <string name="radio_plan">计划</string>
+    <string name="radio_hot">热量</string>
+</resources>

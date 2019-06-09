@@ -32,26 +32,25 @@
         android:id="@+id/bottomGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/radioHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_home" />
+            android:text="@string/radio_home"
+            android:drawableTop="@mipmap/home"
+            style="@style/radio_button"/>
 
         <RadioButton
             android:id="@+id/radioPlan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_plan" />
+            android:text="@string/radio_plan"
+            android:drawableTop="@mipmap/plan"
+            style="@style/radio_button"/>
 
         <RadioButton
             android:id="@+id/radioHot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_hot" />
+            android:text="@string/radio_hot"
+            android:drawableTop="@mipmap/hot"
+            style="@style/radio_button"/>
 
     </RadioGroup>
 

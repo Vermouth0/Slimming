@@ -2,7 +2,9 @@ package com.swufe.wy.slimming;
 
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +31,14 @@ public class HomeFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         TextView tv = getView().findViewById(R.id.homeTextView1);
-        tv.setText("这是主页面");
+        tv.setText("主页");
+
+        ViewPager viewPager = getView().findViewById(R.id.viewpager_home);
+        HomeAdapter pageAdapter = new HomeAdapter(getFragmentManager());
+        viewPager.setAdapter(pageAdapter);
+
+        TabLayout tabLayout = getView().findViewById(R.id.home_tabs);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
 

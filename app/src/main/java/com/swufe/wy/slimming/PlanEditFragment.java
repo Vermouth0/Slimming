@@ -6,15 +6,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HotFragment extends Fragment {
+public class PlanEditFragment extends Fragment {
 
 
-    public HotFragment() {
+    public PlanEditFragment() {
         // Required empty public constructor
     }
 
@@ -22,14 +22,8 @@ public class HotFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.frame_hot, container);
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        TextView tv = getView().findViewById(R.id.hotTextView1);
-        tv.setText("热量");
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_plan_edit, container, false);
     }
 
 }
